@@ -23,3 +23,4 @@
 * **LinkedIn Article:** [My 20-Year Journey in the Software Industry](https://www.linkedin.com/pulse/my-20-year-journey-software-industry-hemant-virmani/)
 * **Daughter's YouTube Channel:** [Channel Link](https://www.youtube.com/channel/UC-T-vFfD9XmQx9Y_k2fX3Lw)
 * **Personal Blog:** [Hemant Virmani's Blog](https://h.virmani.cc/blog)
+* **My Clicks: ** Pinterest(https://in.pinterest.com/clicksbyhemant/clicks/)
