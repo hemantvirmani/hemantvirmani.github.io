@@ -1,34 +1,25 @@
 # hemantvirmani.github.io
 
-# About Hemant Virmani
+# Hemant Virmani
 
-### The Person
+### Some things about me:
+* **Tech Leader:** Currently at Amazon in the Greater Seattle Area.
+* **Journey:** Started in Delhi, India, moved to Hyderabad (2014), and then to Washington State, USA (2021).
+* **Passions:** Enjoys hiking, trying exotic cuisines (especially Indian food like dal makhani, kadi pakora, and hyderabadi biryani), and learning mnemonic techniques (a "mnemonic freak"). Also a "gourmand."
+* **Family:** His wife and daughter are his "anchors." Parents reside in India's heart - Delhi.
+* **Inspirations:** Draws courage and inspiration from Shaheed Bhagat Singh.
+* **Favorite Art:** Leonardo da Vinci's Mona Lisa.
 
-**Who is Hemant Virmani?**
-A tech leader at Amazon in the Greater Seattle Area, Hemant is a friend, mentor, and problem solver who enjoys being a "mnemonic freak" and a "gourmand."
+### Some things I believe:
+* **Problem Solving:** Every challenge has a solution, often requiring a fresh perspective.
+* **Mentorship:** Sharing knowledge and guiding others is crucial for collective growth.
+* **Continuous Learning:** Always open to new ideas and methods.
+* **Family First:** Family provides grounding and motivation.
+* **Cultural Experience:** Exploring diverse cuisines is a gateway to understanding different cultures.
+* **Impact:** Striving to make a meaningful difference in the software industry and through personal connections.
+* **Team Structure:** Smaller teams lead to faster decisions, fewer meetings, and more fun. (took from nat.org).
 
-**Tell us about his journey.**
-Hemant's journey began in Delhi, India. In 2014, he moved to Hyderabad and eventually made his way to Washington State, USA, in 2021.
-
-**What are some of his hobbies?**
-He enjoys hiking, sampling exotic cuisines (especially Indian food like dal makhani and biryani), and learning mnemonic techniques.
-
-**Who is his family?**
-His parents reside in India, and his wife and daughter are his "anchors."
-
-**Who inspires him?**
-Hemant cites Shaheed Bhagat Singh as a figure whose courage resonates with him.
-
-### Inspirations
-
-**Favorite masterpiece?**
-Leonardo da Vinci's Mona Lisa.
-
-**Real-life superhero?**
-Shaheed Bhagat Singh.
-
-### Links
-
-* [Hemant's 20-Year Journey in the Software Industry](https://www.linkedin.com/pulse/my-20-year-journey-software-industry-hemant-virmani/)
-* [His Daughter's YouTube Channel](https://www.youtube.com/channel/UC-T-vFfD9XmQx9Y_k2fX3Lw)
-* [Hemant's Personal Blog](https://h.virmani.cc/blog)
+### Links:
+* **LinkedIn Article:** [My 20-Year Journey in the Software Industry](https://www.linkedin.com/pulse/my-20-year-journey-software-industry-hemant-virmani/)
+* **Daughter's YouTube Channel:** [Channel Link](https://www.youtube.com/channel/UC-T-vFfD9XmQx9Y_k2fX3Lw)
+* **Personal Blog:** [Hemant Virmani's Blog](https://h.virmani.cc/blog)
