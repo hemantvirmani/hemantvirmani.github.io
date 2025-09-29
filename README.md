@@ -54,7 +54,6 @@ I'm **Hemant**, your go-to problem solver and tech enthusiast! Currently working
 
 ### 📱 My Digital Footprint
 - 💼 [My 20-Year Journey in the Software Industry](https://www.linkedin.com/pulse/20-years-down-memory-lane-hemant-virmani/) - LinkedIn Article
-- 🎥 [My Daughter's YouTube Channel](https://www.youtube.com/channel/UCk4Bo12KZU-BqlXw6KUJ58g) *(less maintained now)*
 - ✍️ [My Personal Blog](https://includethoughts.blogspot.com/) *(has been quiet since COVID)*
 - 📸 [My Clicks - Pinterest Page](https://in.pinterest.com/clicksbyhemant/clicks/)
 
