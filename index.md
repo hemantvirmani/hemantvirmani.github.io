@@ -6,7 +6,7 @@
 
 ## 🔷 Who Am I?
 
-I'm **Hemant**, your go-to problem solver and tech enthusiast! Currently working as a **🏢 Tech Leader at Amazon** in the Greater Seattle Area, where I'm shaping the future of e-commerce one line of code at a time.
+I am **Hemant**, your go-to problem solver and tech enthusiast! Currently working as a **🏢 Tech Leader at Amazon** in the Greater Seattle Area, where I'm shaping the future of e-commerce one line of code at a time.
 
 ### 🗺️ My Journey
 - 🏛️ **Delhi, India** - Where it all began, surrounded by bustling streets and vibrant culture
