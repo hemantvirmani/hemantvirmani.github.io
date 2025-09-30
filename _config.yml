@@ -1,1 +1,5 @@
-
+# Stop Jekyll from creating the default site menu
+show_excerpts: false
+show_downloads: false
+# You may also want to explicitly set a theme if one is active
+# theme: jekyll-theme-minimal
