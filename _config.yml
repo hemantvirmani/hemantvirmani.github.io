@@ -1,5 +1,7 @@
-# Stop Jekyll from creating the default site menu
-show_excerpts: false
-show_downloads: false
-# You may also want to explicitly set a theme if one is active
-# theme: jekyll-theme-minimal
+# Tells Jekyll to look for these files and apply specific settings
+defaults:
+  - scope:
+      path: "README.md"  # Target your specific file
+    values:
+      layout: "none"    # Set the layout to 'none' to remove all theme components
+
