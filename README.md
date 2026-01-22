@@ -57,7 +57,7 @@ I am **Hemant**, your go-to problem solver and tech enthusiast! Currently workin
 - ✍️ [My Personal Blog](https://includethoughts.blogspot.com/) *(has been quiet since COVID)*
 - 📸 [My Clicks - Pinterest Page](https://in.pinterest.com/clicksbyhemant/clicks/)
 - 🔐 [My Vault](https://github.com/hemantvirmani/Ctrl-Alt-Vault/)
-- 🎨 Daughter's Art and Phorography Gallery on [Behance](https://behance.net/gallery/235460197/Selected-Artwork-Prakriti-Virmani)
+- 🎨 Daughter's Art and Phorography Gallery on [Behance](https://www.behance.net/prakritivirmani)
 
 ---
 
