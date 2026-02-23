@@ -55,11 +55,11 @@ Now I am in full **self-enhancement mode**: upgrading mindsets, skills, and habi
 
 ### 📱 My Digital Footprint
 - 💼 [My LinkedIn Profile](https://www.linkedin.com/in/hemant-virmani/)
-- ✍️ [My Personal Blog](https://includethoughts.blogspot.com/) *(has been quiet since COVID)*
-- 📸 [My Clicks - Pinterest Page](https://in.pinterest.com/clicksbyhemant/clicks/)
-- 🔐 [My Info Vault](https://github.com/hemantvirmani/Ctrl-Alt-Vault/)
 - 🤖 [DeskGenie](https://github.com/hemantvirmani/DeskGenie) - AI productivity companion repo where I experiment with practical automation.
 - 🧭 [MMD](https://github.com/hemantvirmani/mmd) - Mermaid editor repo; live URL: https://h.virmani.cc/mmd/
+- 🔐 [My Info Vault](https://github.com/hemantvirmani/Ctrl-Alt-Vault/)
+- ✍️ [My Personal Blog](https://includethoughts.blogspot.com/) *(has been quiet since COVID)*
+- 📸 [My Clicks - Pinterest Page](https://in.pinterest.com/clicksbyhemant/clicks/)
 - 🎨 Daughter's Art and Phorography Gallery on [Behance](https://www.behance.net/prakritivirmani)
 
 ---
