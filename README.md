@@ -6,7 +6,8 @@
 
 ## 🔷 Who Am I?
 
-I am **Hemant**, your go-to problem solver and tech enthusiast! Currently working as a **🏢 Tech Leader at Amazon** in the Greater Seattle Area, where I'm shaping the future of e-commerce one line of code at a time.
+I am **Hemant**, your go-to problem solver and tech enthusiast. My Amazon chapter wrapped up in **January 2026**, where I, recently, served as **Head of Engineering for Customs, Compliance, and Cross Border Fulfilment (GL Business)** in the Greater Seattle Area.  
+Now I am in full **self-enhancement mode**: upgrading mindsets, skills, and habits like a production system with zero downtime and very loud release notes.
 
 ### 🗺️ My Journey
 - 🏛️ **Delhi, India** - Where it all began, surrounded by bustling streets and vibrant culture
@@ -53,10 +54,12 @@ I am **Hemant**, your go-to problem solver and tech enthusiast! Currently workin
 ## 🔗 Connect & Explore
 
 ### 📱 My Digital Footprint
-- 💼 [My 20-Year Journey in the Software Industry](https://www.linkedin.com/pulse/20-years-down-memory-lane-hemant-virmani/) - LinkedIn Article
+- 💼 [My LinkedIn Profile](https://www.linkedin.com/in/hemant-virmani/)
 - ✍️ [My Personal Blog](https://includethoughts.blogspot.com/) *(has been quiet since COVID)*
 - 📸 [My Clicks - Pinterest Page](https://in.pinterest.com/clicksbyhemant/clicks/)
-- 🔐 [My Vault](https://github.com/hemantvirmani/Ctrl-Alt-Vault/)
+- 🔐 [My Info Vault](https://github.com/hemantvirmani/Ctrl-Alt-Vault/)
+- 🤖 [DeskGenie](https://github.com/hemantvirmani/DeskGenie) - AI productivity companion repo where I experiment with practical automation.
+- 🧭 [MMD](https://github.com/hemantvirmani/mmd) - Mermaid editor repo; live URL: https://h.virmani.cc/mmd/
 - 🎨 Daughter's Art and Phorography Gallery on [Behance](https://www.behance.net/prakritivirmani)
 
 ---
