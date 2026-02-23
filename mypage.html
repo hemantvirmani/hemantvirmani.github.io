@@ -1,87 +1,335 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hemant Virmani</title>
-    <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.5; color: #333; max-width: 800px; margin: 40px auto; padding: 0 20px; background-color: #fff; }
-        a { color: #007bff; text-decoration: none; border-bottom: 1px solid transparent; }
-        a:hover { border-bottom: 1px solid #007bff; }
-        .header { margin-bottom: 40px; }
-        h1 { margin-bottom: 5px; font-size: 2.2em; color: #000; }
-        .punchline { font-style: italic; color: #555; margin-bottom: 20px; font-size: 1.1em; }
-        .links { margin-bottom: 30px; font-size: 0.95em; }
-        .links a { margin-right: 15px; font-weight: 500; }
-        .timeline { position: relative; border-left: 1px solid #ddd; padding-left: 25px; margin-left: 5px; }
-        .event { margin-bottom: 30px; position: relative; }
-        .event::before { content: ""; position: absolute; left: -31px; top: 6px; width: 10px; height: 10px; background: #fff; border: 1px solid #333; border-radius: 50%; }
-        .year { font-weight: bold; font-size: 1em; color: #000; margin-bottom: 4px; }
-        .title { font-weight: 600; color: #222; }
-        .desc { font-size: 0.95em; color: #444; }
-        section { margin-top: 50px; }
-        h2 { font-size: 1.2em; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1.5px; border-bottom: 1px solid #eee; padding-bottom: 5px; }
-        ul { padding-left: 20px; }
-        li { margin-bottom: 8px; font-size: 0.95em; }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hemant Virmani</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --paper: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --line: #cbd5e1;
+      --accent: #0b63ce;
+      --accent-soft: #dbeafe;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: radial-gradient(circle at top right, #e2e8f0 0%, #f8fafc 35%, #f8fafc 100%);
+      color: var(--text);
+      font-family: "Avenir Next", "Segoe UI", "Trebuchet MS", "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 42px 22px 64px;
+    }
+
+    .hero {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 26px;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 3.7vw, 2.8rem);
+      letter-spacing: -0.02em;
+    }
+
+    .subtitle {
+      margin: 12px 0 16px;
+      color: var(--muted);
+      max-width: 75ch;
+    }
+
+    .punchline {
+      margin: 0;
+      font-size: 1.02rem;
+      color: #0b2f61;
+      background: var(--accent-soft);
+      border-left: 4px solid var(--accent);
+      padding: 12px 14px;
+      border-radius: 8px;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .links a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+      border-bottom: 1px solid transparent;
+    }
+
+    .links a:hover {
+      border-bottom-color: var(--accent);
+    }
+
+    section {
+      margin-top: 34px;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: 0.92rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: #1d4f91;
+    }
+
+    .timeline {
+      position: relative;
+      margin-left: 10px;
+      padding-left: 28px;
+      border-left: 2px solid var(--line);
+    }
+
+    .item {
+      position: relative;
+      padding: 2px 0 20px;
+    }
+
+    .item::before {
+      content: "";
+      position: absolute;
+      left: -35px;
+      top: 8px;
+      width: 12px;
+      height: 12px;
+      border: 2px solid var(--accent);
+      background: var(--paper);
+      border-radius: 50%;
+    }
+
+    .year {
+      font-size: 0.84rem;
+      letter-spacing: 0.05em;
+      color: #1e293b;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 3px;
+    }
+
+    .role {
+      font-weight: 700;
+    }
+
+    .meta {
+      color: var(--muted);
+      margin: 2px 0 6px;
+      font-size: 0.95rem;
+    }
+
+    .desc {
+      margin: 0;
+      color: #1f2937;
+    }
+
+    .cards {
+      display: grid;
+      gap: 12px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 14px 14px 12px;
+    }
+
+    .card h3 {
+      margin: 0 0 6px;
+      font-size: 1rem;
+    }
+
+    .card p {
+      margin: 0;
+      color: #334155;
+      font-size: 0.96rem;
+    }
+
+    .list {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .list li {
+      margin-bottom: 9px;
+    }
+
+    .footnote {
+      margin-top: 26px;
+      font-size: 0.92rem;
+      color: var(--muted);
+    }
+
+    @media (max-width: 760px) {
+      .cards {
+        grid-template-columns: 1fr;
+      }
+      .timeline {
+        padding-left: 24px;
+      }
+      .item::before {
+        left: -31px;
+      }
+    }
+  </style>
 </head>
 <body>
-
-    <div class="header">
-        <h1>Hemant Virmani</h1>
-        <p class="punchline">Engineering leader with a builder's heart: scaling global platforms and orchestrating the next wave of Agentic AI.</p>
-        <div class="links">
-            <a href="https://www.linkedin.com/in/hemantvirmani/">LinkedIn</a>
-            <a href="https://h.virmani.cc">Personal Site</a>
-            <a href="https://github.com/hvirmani">GitHub</a>
-            <a href="https://www.pinterest.com/hvirmani/">Pinterest</a>
-        </div>
-    </div>
-
-    <h2>Timeline</h2>
-    <div class="timeline">
-        <div class="event">
-            <div class="year">2026 – Present</div>
-            <div class="desc"><span class="title">Engineering Leadership & AI Orchestration.</span> Focused on Agentic AI (LangGraph, ReAct) and scaling AI-native infrastructure. Accomplished GAIA benchmark milestones via optimized tool-calling logic.</div>
-        </div>
-        <div class="event">
-            <div class="year">2021 – 2026</div>
-            <div class="desc"><span class="title">Amazon (Head of Engineering - Customs & Compliance).</span> Bellevue, WA. Led global engineering for $3B business. Delivered high-availability systems and GenAI classification tools saving millions in annual ops costs.</div>
-        </div>
-        <div class="event">
-            <div class="year">2014 – 2021</div>
-            <div class="desc"><span class="title">Amazon (Senior Manager / SDM).</span> Hyderabad, India. Built global identity platform (0 to 40+ people) and re-architected artifact storage for 50B+ objects with 99.999% availability.</div>
-        </div>
-        <div class="event">
-            <div class="year">2002 – 2014</div>
-            <div class="desc"><span class="title">Adobe (Senior Engineering Manager).</span> Noida, India. Co-authored 6 US patents in document processing. Earned MS in Software Systems (BITS Pilani, 2008) while leading engineering teams.</div>
-        </div>
-        <div class="event">
-            <div class="year">2000</div>
-            <div class="desc"><span class="title">B.E. Computer Science.</span> Delhi College of Engineering.</div>
-        </div>
-    </div>
+  <main>
+    <header class="hero">
+      <h1>Hemant Virmani</h1>
+      <p class="subtitle">
+        Engineering leader and builder. I have scaled cloud-native platforms from 0 to 1 and 1 to 10,
+        built global organizations, and turned AI/ML into real operational and business outcomes.
+      </p>
+      <p class="punchline">
+        From prototype to production, I build cloud-native & AI/ML systems that deliver measurable results.
+      </p>
+      <div class="links">
+        <a href="https://www.linkedin.com/in/hemantvirmani/">LinkedIn</a>
+        <a href="https://h.virmani.cc">Personal Site</a>
+        <a href="https://github.com/hemantvirmani/DeskGenie">DeskGenie</a>
+        <a href="https://github.com/hemantvirmani/mmd">MMD Repo</a>
+        <a href="https://h.virmani.cc/mmd/">MMD Live</a>
+      </div>
+    </header>
 
     <section>
-        <h2>Featured Projects</h2>
-        <ul>
-            <li><a href="https://h.virmani.cc/mmd/">MMD</a>: A live Mermaid.js editor and diagramming tool.</li>
-            <li><a href="https://github.com/hvirmani">DeskGenie</a>: AI productivity companion for local automation and LLM experimentation.</li>
-            <li><strong>6 US Patents</strong>: Including US 9032284 (Intelligent document repurposing) and US 8804139.</li>
-        </ul>
+      <h2>Timeline</h2>
+      <div class="timeline">
+        <article class="item">
+          <div class="year">2026 - Present</div>
+          <div class="role">Self Enhancement Sprint</div>
+          <div class="meta">Sammamish, WA</div>
+          <p class="desc">
+            Deep dive into applied AI/ML, agentic systems, and practical productivity tooling. Current focus:
+            stronger technical depth, faster execution loops, and fewer meetings pretending to be strategy.
+          </p>
+        </article>
+
+        <article class="item">
+          <div class="year">2021 - Jan 2026</div>
+          <div class="role">Head of Engineering, Customs, Compliance and Cross Border Fulfilment (GL Business)</div>
+          <div class="meta">Amazon, Bellevue, WA</div>
+          <p class="desc">
+            Led a global engineering and science organization for cross-border selling and global fulfillment.
+            Drove customs and compliance modernization for a large international business surface.
+          </p>
+        </article>
+
+        <article class="item">
+          <div class="year">2019 - 2021</div>
+          <div class="role">Senior Software Development Manager</div>
+          <div class="meta">Amazon, Hyderabad, India</div>
+          <p class="desc">
+            Built and scaled a seller verification organization from the ground up, including managers, TPMs,
+            and engineers. Delivered strong quality, speed, and customer trust outcomes.
+          </p>
+        </article>
+
+        <article class="item">
+          <div class="year">2014 - 2019</div>
+          <div class="role">Software Development Manager</div>
+          <div class="meta">Amazon, Hyderabad, India</div>
+          <p class="desc">
+            Delivered real-time global supply chain monitoring and later led computer vision plus OCR initiatives
+            for seller identity and document processing at scale.
+          </p>
+        </article>
+
+        <article class="item">
+          <div class="year">2002 - 2014</div>
+          <div class="role">Member of Technical Staff to Senior Engineering Manager</div>
+          <div class="meta">Adobe, Noida, India</div>
+          <p class="desc">
+            Advanced through multiple leadership levels, co-authored six US patents, and led innovations in
+            document processing, print optimization, and platform continuity.
+          </p>
+        </article>
+
+        <article class="item">
+          <div class="year">Education</div>
+          <div class="role">BITS Pilani, PTU, and Delhi College of Engineering</div>
+          <p class="desc">
+            MS in Software Systems, MSc in Information Technology, and BE from Delhi College of Engineering.
+          </p>
+        </article>
+      </div>
     </section>
 
     <section>
-        <h2>Misc Unsorted</h2>
-        <ul>
-            <li><strong>Mnemonic Freak</strong>: I’m obsessed with memory techniques—I can help you remember almost anything.</li>
-            <li><strong>Family First</strong>: Check out my <a href="https://www.behance.net/gallery/183171333/My-Art-and-Photography">daughter's art gallery</a>.</li>
-            <li><strong>Gourmand</strong>: On a perpetual quest for the perfect Hyderabadi biryani and Pacific Northwest coffee.</li>
-            <li><strong>Inspirations</strong>: From the courage of <a href="https://en.wikipedia.org/wiki/Bhagat_Singh">Shaheed Bhagat Singh</a> to childhood memories of He-Man.</li>
-            <li><strong>Masterpiece</strong>: The <a href="https://en.wikipedia.org/wiki/Mona_Lisa">Mona Lisa</a> — for its enigmatic representation of simplicity.</li>
-            <li><strong>0 Frameworks</strong>: This page is pure HTML/CSS. I'm becoming allergic to 500-pound websites.</li>
-        </ul>
+      <h2>Selected Impact</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>AI/ML at production scale</h3>
+          <p>
+            Integrated LLM and ML workflows for classification and automation, reducing processing costs and
+            enabling significant business impact.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Reliability and scale</h3>
+          <p>
+            Re-architected secure document infrastructure to support 50B+ artifacts and 300+ services with very high availability.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Org building</h3>
+          <p>
+            Built and scaled high-performing global teams, promoted senior leaders, and improved operating
+            clarity across engineering groups.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Patent-backed innovation</h3>
+          <p>
+            Co-authored six US patents spanning document processing and print optimization technologies.
+          </p>
+        </article>
+      </div>
     </section>
 
+    <section>
+      <h2>Projects and Links</h2>
+      <ul class="list">
+        <li><a href="https://github.com/hemantvirmani/DeskGenie">DeskGenie</a> - AI productivity companion and experimentation sandbox.</li>
+        <li><a href="https://github.com/hemantvirmani/mmd">MMD</a> - Mermaid editor repo; live at <a href="https://h.virmani.cc/mmd/">h.virmani.cc/mmd</a>.</li>
+        <li><a href="https://github.com/hemantvirmani/Ctrl-Alt-Vault/">Info Vault</a> - curated repository of reusable references and utilities.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Beyond Work</h2>
+      <ul class="list">
+        <li>Mentorship, problem solving, and continuous learning.</li>
+        <li>Mnemonic techniques, hiking, and discovering great food.</li>
+        <li>Inspired by Bhagat Singh, He-Man nostalgia, and the Mona Lisa.</li>
+        <li>Family first, always. Daughter's gallery on <a href="https://www.behance.net/prakritivirmani">Behance</a>.</li>
+      </ul>
+      <p class="footnote">
+        "Life's greatest adventures are within our own four walls, but the best stories come from stepping outside them."
+      </p>
+    </section>
+  </main>
 </body>
 </html>
