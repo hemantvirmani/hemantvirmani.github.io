@@ -1,335 +1,281 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hemant Virmani</title>
-  <style>
-    :root {
-      --bg: #f8fafc;
-      --paper: #ffffff;
-      --text: #0f172a;
-      --muted: #475569;
-      --line: #cbd5e1;
-      --accent: #0b63ce;
-      --accent-soft: #dbeafe;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hemant Virmani | Head of Engineering</title>
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #333333;
+            --accent-blue: #2563eb;
+            --light-gray: #f4f4f7;
+            --border-color: #e5e7eb;
+            --secondary-text: #666666;
+        }
 
-    * {
-      box-sizing: border-box;
-    }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
 
-    html, body {
-      margin: 0;
-      padding: 0;
-      background: radial-gradient(circle at top right, #e2e8f0 0%, #f8fafc 35%, #f8fafc 100%);
-      color: var(--text);
-      font-family: "Avenir Next", "Segoe UI", "Trebuchet MS", "Helvetica Neue", Arial, sans-serif;
-      line-height: 1.6;
-    }
+        header {
+            margin-bottom: 50px;
+        }
 
-    main {
-      max-width: 920px;
-      margin: 0 auto;
-      padding: 42px 22px 64px;
-    }
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            letter-spacing: -0.02em;
+        }
 
-    .hero {
-      background: var(--paper);
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      padding: 26px;
-      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
-    }
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--secondary-text);
+            margin-bottom: 20px;
+        }
 
-    h1 {
-      margin: 0;
-      font-size: clamp(2rem, 3.7vw, 2.8rem);
-      letter-spacing: -0.02em;
-    }
+        .status-badge {
+            display: inline-block;
+            background: var(--light-gray);
+            padding: 5px 12px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            border: 1px solid var(--border-color);
+            margin-bottom: 20px;
+        }
 
-    .subtitle {
-      margin: 12px 0 16px;
-      color: var(--muted);
-      max-width: 75ch;
-    }
+        .punchline {
+            font-weight: 500;
+            font-size: 1.1rem;
+            border-left: 3px solid var(--accent-blue);
+            padding-left: 15px;
+            margin: 30px 0;
+        }
 
-    .punchline {
-      margin: 0;
-      font-size: 1.02rem;
-      color: #0b2f61;
-      background: var(--accent-soft);
-      border-left: 4px solid var(--accent);
-      padding: 12px 14px;
-      border-radius: 8px;
-    }
+        section {
+            margin-bottom: 40px;
+        }
 
-    .links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 18px;
-    }
+        h2 {
+            font-size: 1.4rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+            color: var(--text-color);
+        }
 
-    .links a {
-      color: var(--accent);
-      text-decoration: none;
-      font-weight: 600;
-      border-bottom: 1px solid transparent;
-    }
+        /* Timeline Styles */
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+        }
 
-    .links a:hover {
-      border-bottom-color: var(--accent);
-    }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+        }
 
-    section {
-      margin-top: 34px;
-    }
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            left: -31px;
+            top: 8px;
+            width: 10px;
+            height: 10px;
+            background-color: var(--accent-blue);
+            border-radius: 50%;
+        }
 
-    h2 {
-      margin: 0 0 14px;
-      font-size: 0.92rem;
-      text-transform: uppercase;
-      letter-spacing: 0.14em;
-      color: #1d4f91;
-    }
+        .timeline-item::after {
+            content: "";
+            position: absolute;
+            left: -26px;
+            top: 20px;
+            width: 1px;
+            height: calc(100% + 10px);
+            background-color: var(--border-color);
+        }
 
-    .timeline {
-      position: relative;
-      margin-left: 10px;
-      padding-left: 28px;
-      border-left: 2px solid var(--line);
-    }
+        .timeline-item:last-child::after {
+            display: none;
+        }
 
-    .item {
-      position: relative;
-      padding: 2px 0 20px;
-    }
+        .date {
+            font-size: 0.85rem;
+            color: var(--secondary-text);
+            font-weight: 600;
+            text-transform: uppercase;
+        }
 
-    .item::before {
-      content: "";
-      position: absolute;
-      left: -35px;
-      top: 8px;
-      width: 12px;
-      height: 12px;
-      border: 2px solid var(--accent);
-      background: var(--paper);
-      border-radius: 50%;
-    }
+        .job-title {
+            font-weight: 700;
+            display: block;
+        }
 
-    .year {
-      font-size: 0.84rem;
-      letter-spacing: 0.05em;
-      color: #1e293b;
-      font-weight: 700;
-      text-transform: uppercase;
-      margin-bottom: 3px;
-    }
+        .company {
+            color: var(--accent-blue);
+            text-decoration: none;
+            font-weight: 500;
+        }
 
-    .role {
-      font-weight: 700;
-    }
+        .description {
+            font-size: 0.95rem;
+            margin-top: 5px;
+        }
 
-    .meta {
-      color: var(--muted);
-      margin: 2px 0 6px;
-      font-size: 0.95rem;
-    }
+        /* Project Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
 
-    .desc {
-      margin: 0;
-      color: #1f2937;
-    }
+        .card {
+            background: var(--light-gray);
+            padding: 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.2s ease;
+            border: 1px solid transparent;
+        }
 
-    .cards {
-      display: grid;
-      gap: 12px;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
+        .card:hover {
+            transform: translateY(-2px);
+            border-color: var(--accent-blue);
+        }
 
-    .card {
-      background: var(--paper);
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      padding: 14px 14px 12px;
-    }
+        .card h3 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            color: var(--accent-blue);
+        }
 
-    .card h3 {
-      margin: 0 0 6px;
-      font-size: 1rem;
-    }
+        /* Education & Links */
+        .links a {
+            color: var(--accent-blue);
+            text-decoration: none;
+            margin-right: 15px;
+        }
 
-    .card p {
-      margin: 0;
-      color: #334155;
-      font-size: 0.96rem;
-    }
+        .links a:hover {
+            text-decoration: underline;
+        }
 
-    .list {
-      margin: 0;
-      padding-left: 18px;
-    }
+        .edu-item {
+            margin-bottom: 15px;
+        }
 
-    .list li {
-      margin-bottom: 9px;
-    }
-
-    .footnote {
-      margin-top: 26px;
-      font-size: 0.92rem;
-      color: var(--muted);
-    }
-
-    @media (max-width: 760px) {
-      .cards {
-        grid-template-columns: 1fr;
-      }
-      .timeline {
-        padding-left: 24px;
-      }
-      .item::before {
-        left: -31px;
-      }
-    }
-  </style>
+        @media (max-width: 600px) {
+            .grid { grid-template-columns: 1fr; }
+            body { padding: 20px; }
+        }
+    </style>
 </head>
 <body>
-  <main>
-    <header class="hero">
-      <h1>Hemant Virmani</h1>
-      <p class="subtitle">
-        Engineering leader and builder. I have scaled cloud-native platforms from 0 to 1 and 1 to 10,
-        built global organizations, and turned AI/ML into real operational and business outcomes.
-      </p>
-      <p class="punchline">
-        From prototype to production, I build cloud-native & AI/ML systems that deliver measurable results.
-      </p>
-      <div class="links">
-        <a href="https://www.linkedin.com/in/hemantvirmani/">LinkedIn</a>
-        <a href="https://h.virmani.cc">Personal Site</a>
-        <a href="https://github.com/hemantvirmani/DeskGenie">DeskGenie</a>
-        <a href="https://github.com/hemantvirmani/mmd">MMD Repo</a>
-        <a href="https://h.virmani.cc/mmd/">MMD Live</a>
-      </div>
+
+    <header>
+        <h1>Hemant Virmani</h1>
+        <div class="subtitle">Head of Engineering | AI & Distributed Systems Leader</div>
+        
+        <div class="status-badge">
+            🚀 <strong>Current Phase:</strong> Full self-enhancement mode. Upgrading mindsets and skills like a production system with zero downtime (and very loud release notes).
+        </div>
+
+        <div class="links">
+            <a href="https://www.linkedin.com/in/hemantvirmani/">LinkedIn</a>
+            <a href="https://github.com/hemantvirmani">GitHub</a>
+            <a href="https://h.virmani.cc/mmd/">MMD Editor</a>
+        </div>
+
+        <p class="punchline">
+            “From prototype to production, I build cloud-native & AI/ML systems that deliver measurable results.”
+        </p>
     </header>
 
     <section>
-      <h2>Timeline</h2>
-      <div class="timeline">
-        <article class="item">
-          <div class="year">2026 - Present</div>
-          <div class="role">Self Enhancement Sprint</div>
-          <div class="meta">Sammamish, WA</div>
-          <p class="desc">
-            Deep dive into applied AI/ML, agentic systems, and practical productivity tooling. Current focus:
-            stronger technical depth, faster execution loops, and fewer meetings pretending to be strategy.
-          </p>
-        </article>
+        <h2>Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="date">Jul 2021 – Jan 2026</div>
+                <span class="job-title">Head of Engineering, Customs & Compliance (GL Business)</span>
+                <span class="company">Amazon</span>
+                <p class="description">Led a multi-layered engineering and science organization for a $35B GMS segment. Delivered Agentic AI systems using Claude 3.7 and LangGraph, saving $3.6M annually and automating 70% of high-volume classification tasks.</p>
+            </div>
 
-        <article class="item">
-          <div class="year">2021 - Jan 2026</div>
-          <div class="role">Head of Engineering, Customs, Compliance and Cross Border Fulfilment (GL Business)</div>
-          <div class="meta">Amazon, Bellevue, WA</div>
-          <p class="desc">
-            Led a global engineering and science organization for cross-border selling and global fulfillment.
-            Drove customs and compliance modernization for a large international business surface.
-          </p>
-        </article>
+            <div class="timeline-item">
+                <div class="date">Oct 2019 – Jul 2021</div>
+                <span class="job-title">Senior Software Development Manager</span>
+                <span class="company">Amazon</span>
+                <p class="description">Built a 40-person global team from scratch. Re-architected secure document storage for five-9s availability, supporting 50B+ artifacts and 300+ internal services.</p>
+            </div>
 
-        <article class="item">
-          <div class="year">2019 - 2021</div>
-          <div class="role">Senior Software Development Manager</div>
-          <div class="meta">Amazon, Hyderabad, India</div>
-          <p class="desc">
-            Built and scaled a seller verification organization from the ground up, including managers, TPMs,
-            and engineers. Delivered strong quality, speed, and customer trust outcomes.
-          </p>
-        </article>
+            <div class="timeline-item">
+                <div class="date">Jul 2014 – Sep 2019</div>
+                <span class="job-title">Software Development Manager</span>
+                <span class="company">Amazon</span>
+                <p class="description">Led Computer Vision/OCR initiatives for identity verification. Developed the solution that eventually became the foundation for the public AWS Textract API.</p>
+            </div>
 
-        <article class="item">
-          <div class="year">2014 - 2019</div>
-          <div class="role">Software Development Manager</div>
-          <div class="meta">Amazon, Hyderabad, India</div>
-          <p class="desc">
-            Delivered real-time global supply chain monitoring and later led computer vision plus OCR initiatives
-            for seller identity and document processing at scale.
-          </p>
-        </article>
+            <div class="timeline-item">
+                <div class="date">Feb 2008 – Jul 2014</div>
+                <span class="job-title">Engineering Manager</span>
+                <span class="company">Adobe Systems</span>
+                <p class="description">Directed product development for Print Publishing. Co-authored 6 U.S. Patents. Developed Adobe LeanPrint, reducing enterprise toner usage by 85%.</p>
+            </div>
 
-        <article class="item">
-          <div class="year">2002 - 2014</div>
-          <div class="role">Member of Technical Staff to Senior Engineering Manager</div>
-          <div class="meta">Adobe, Noida, India</div>
-          <p class="desc">
-            Advanced through multiple leadership levels, co-authored six US patents, and led innovations in
-            document processing, print optimization, and platform continuity.
-          </p>
-        </article>
-
-        <article class="item">
-          <div class="year">Education</div>
-          <div class="role">BITS Pilani, PTU, and Delhi College of Engineering</div>
-          <p class="desc">
-            MS in Software Systems, MSc in Information Technology, and BE from Delhi College of Engineering.
-          </p>
-        </article>
-      </div>
+            <div class="timeline-item">
+                <div class="date">Dec 2002 – Jan 2008</div>
+                <span class="job-title">Computer Scientist / MTS</span>
+                <span class="company">Adobe Systems</span>
+                <p class="description">Revitalized legacy products like FrameMaker and spearheaded XPS technology integrations for business continuity.</p>
+            </div>
+        </div>
     </section>
 
     <section>
-      <h2>Selected Impact</h2>
-      <div class="cards">
-        <article class="card">
-          <h3>AI/ML at production scale</h3>
-          <p>
-            Integrated LLM and ML workflows for classification and automation, reducing processing costs and
-            enabling significant business impact.
-          </p>
-        </article>
-        <article class="card">
-          <h3>Reliability and scale</h3>
-          <p>
-            Re-architected secure document infrastructure to support 50B+ artifacts and 300+ services with very high availability.
-          </p>
-        </article>
-        <article class="card">
-          <h3>Org building</h3>
-          <p>
-            Built and scaled high-performing global teams, promoted senior leaders, and improved operating
-            clarity across engineering groups.
-          </p>
-        </article>
-        <article class="card">
-          <h3>Patent-backed innovation</h3>
-          <p>
-            Co-authored six US patents spanning document processing and print optimization technologies.
-          </p>
-        </article>
-      </div>
+        <h2>Projects</h2>
+        <div class="grid">
+            <a href="https://github.com/hemantvirmani/DeskGenie" class="card">
+                <h3>DeskGenie</h3>
+                <p>An AI productivity companion and repository for experimenting with practical automation and LLM integration.</p>
+            </a>
+            <a href="https://h.virmani.cc/mmd/" class="card">
+                <h3>MMD Editor</h3>
+                <p>A live Mermaid.js editor and visualizer for rapid diagramming and technical documentation.</p>
+            </a>
+        </div>
     </section>
 
     <section>
-      <h2>Projects and Links</h2>
-      <ul class="list">
-        <li><a href="https://github.com/hemantvirmani/DeskGenie">DeskGenie</a> - AI productivity companion and experimentation sandbox.</li>
-        <li><a href="https://github.com/hemantvirmani/mmd">MMD</a> - Mermaid editor repo; live at <a href="https://h.virmani.cc/mmd/">h.virmani.cc/mmd</a>.</li>
-        <li><a href="https://github.com/hemantvirmani/Ctrl-Alt-Vault/">Info Vault</a> - curated repository of reusable references and utilities.</li>
-      </ul>
+        <h2>Education</h2>
+        <div class="edu-item">
+            <strong>M.S. in Software Systems</strong><br>
+            BITS Pilani (Distance Education, completed parallel to Adobe tenure)
+        </div>
+        <div class="edu-item">
+            <strong>B.E. in Civil Engineering</strong><br>
+            Delhi College of Engineering, University of Delhi
+        </div>
     </section>
 
     <section>
-      <h2>Beyond Work</h2>
-      <ul class="list">
-        <li>Mentorship, problem solving, and continuous learning.</li>
-        <li>Mnemonic techniques, hiking, and discovering great food.</li>
-        <li>Inspired by Bhagat Singh, He-Man nostalgia, and the Mona Lisa.</li>
-        <li>Family first, always. Daughter's gallery on <a href="https://www.behance.net/prakritivirmani">Behance</a>.</li>
-      </ul>
-      <p class="footnote">
-        "Life's greatest adventures are within our own four walls, but the best stories come from stepping outside them."
-      </p>
+        <h2>Personal</h2>
+        <p style="font-size: 0.95rem; color: var(--secondary-text);">
+            Mnemonic freak, Pacific Northwest hiker, and blue enthusiast. I believe smaller teams lead to faster decisions and more fun. Based in Sammamish, WA.
+        </p>
     </section>
-  </main>
+
+    <footer style="margin-top: 80px; font-size: 0.8rem; color: #999; text-align: center;">
+        &copy; 2026 Hemant Virmani. Built with simple HTML/CSS.
+    </footer>
+
 </body>
 </html>
