@@ -1,4 +1,4 @@
-body {
+﻿body {
     margin: 0;
     padding: 0;
     background-color: white;
@@ -243,6 +243,29 @@ hr {
     border-right: 1px solid #ccc;
 }
 .nodot {
-    list-style-type: none;
-    padding-left: 0;
+    list-style-position: outside;
+    padding-left: 22px;
+}
+.fancy-list {
+    list-style-position: outside;
+    padding-left: 24px;
+}
+.fancy-list li {
+    margin-bottom: 6px;
+}
+.list-love li::marker {
+    content: "✦ ";
+    color: #1f6fb2;
+}
+.list-beliefs li::marker {
+    content: "◆ ";
+    color: #0a7d5a;
+}
+.list-family li::marker {
+    content: "❤ ";
+    color: #b22222;
+}
+.list-connect li::marker {
+    content: "➤ ";
+    color: #555;
 }
