@@ -1,7 +1,3 @@
----
-layout: default
-title: Previous Website
----
 # 🔵 Hemant Virmani
 
 > *🤝 Friend • 🎯 Mentor • 🧩 Problem Solver • 🎉 Fun Loving • 🧠 Mnemonic Freak • 🍽️ Gourmand • 👨‍👧 Doting Father*
