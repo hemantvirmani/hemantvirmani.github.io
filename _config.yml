@@ -1,7 +1,7 @@
 # Tells Jekyll to look for these files and apply specific settings
 defaults:
   - scope:
-      path: "README.md"  # Target your specific file
+      path: "last.md"  # Target your specific file
     values:
       layout: "none"    # Set the layout to 'none' to remove all theme components
 
