@@ -156,6 +156,9 @@ hr {
     margin-top: 40px;
     color: #0d9488;
 }
+.ctitle-alt {
+    color: #1f6fb2;
+}
 #featured-talks .row {
     grid-column-gap: 10px;
     grid-row-gap: 10px;
@@ -253,6 +256,9 @@ hr {
     list-style-position: outside;
     padding-left: 22px;
 }
+.journey-question {
+    font-style: italic;
+}
 .fancy-list {
     list-style-position: outside;
     padding-left: 24px;
@@ -262,11 +268,11 @@ hr {
 }
 .list-love li::marker {
     content: "✦ ";
-    color: #1f6fb2;
+    color: #0d9488;
 }
 .list-beliefs li::marker {
     content: "◆ ";
-    color: #0a7d5a;
+    color: #0d9488;
 }
 .list-family li::marker {
     content: "❤ ";
