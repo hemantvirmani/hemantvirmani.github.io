@@ -7,6 +7,9 @@
     line-height: 1.4;
     color: #333;
 }
+a {
+    color: #1f6fb2;
+}
 
 /* Layout */
 .container {
@@ -99,7 +102,7 @@ hr {
 .ico {
     grid-column: span 1;
     vertical-align: top;
-    border-left: 2px solid #cfcfcf;
+    border-left: 2px solid #99d6d0;
     position: relative;
 }
 .ico img {
@@ -124,7 +127,7 @@ hr {
     width: 10px;
     height: 10px;
     border-radius: 7px;
-    background-color: #cfcfcf;
+    background-color: #0d9488;
     border: 2px solid white;
 }
 .timespan {
@@ -151,6 +154,7 @@ hr {
     font-size: 36px;
     margin-bottom: 20px;
     margin-top: 40px;
+    color: #0d9488;
 }
 #featured-talks .row {
     grid-column-gap: 10px;
@@ -270,5 +274,5 @@ hr {
 }
 .list-connect li::marker {
     content: "➤ ";
-    color: #555;
+    color: #0d9488;
 }
