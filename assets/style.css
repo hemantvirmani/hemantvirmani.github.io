@@ -293,3 +293,15 @@ hr {
     content: "➤ ";
     color: #0d9488;
 }
+.list-writing li::marker {
+    content: "✎ ";
+    color: #0d9488;
+}
+.list-writing li {
+    margin-bottom: 10px;
+}
+.write-note {
+    display: block;
+    color: #777;
+    font-size: 15px;
+}
