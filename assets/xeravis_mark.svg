@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Xeravis">
+  <rect width="64" height="64" rx="12" fill="#0d9488"/>
+  <g stroke="#ffffff" stroke-width="6" stroke-linecap="round">
+    <line x1="21" y1="21" x2="43" y2="43"/>
+    <line x1="43" y1="21" x2="21" y2="43"/>
+  </g>
+</svg>

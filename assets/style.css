@@ -76,6 +76,17 @@ h2 {
     height: 240px;
     border-radius: 120px;
 }
+#dico {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 12px;
+}
+@media (max-width: 991px) {
+    #dico {
+        justify-content: center;
+    }
+}
 .iico {
     width: 40px;
     height: 40px;
