@@ -79,7 +79,7 @@ h2 {
 #dico {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 32px;
     margin-top: 12px;
 }
 @media (max-width: 991px) {
@@ -93,6 +93,12 @@ h2 {
 }
 .iico_bullet {
     width: 20px;
+}
+.intro-icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 6px;
+    vertical-align: -3px;
 }
 #demail {
     margin-top: 10px;
