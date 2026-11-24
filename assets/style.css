@@ -1,14 +1,26 @@
 ﻿body {
     margin: 0;
     padding: 0;
-    background-color: white;
-    font-family: sans-serif;
-    font-size: 16px;
-    line-height: 1.4;
-    color: #333;
+    background-color: #faf9f5;
+    font-family: 'DM Sans', 'Segoe UI', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.55;
+    color: #142c25;
 }
 a {
-    color: #1f6fb2;
+    color: #173f34;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+h1, h2, h3, .ctitle {
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-weight: normal;
+    letter-spacing: -0.02em;
+}
+/* Keep long text near 60-70 characters per line */
+main .container > p,
+main .container > ul {
+    max-width: 35em;
 }
 
 /* Layout */
@@ -44,25 +56,25 @@ a {
 @media (max-width: 991px) {
     #dpic {
       grid-column: span 12;
-      text-align: center;
+      text-align: left;
     }
     #ddesc {
       grid-column: span 12;
       padding-top: 20px;
-      text-align: center;
+      padding-left: 0;
+      text-align: left;
     }
 }
 h1 {
-    font-size: 34px;
-    font-weight: normal;
+    font-size: 48px;
+    line-height: 1.05;
     padding: 0;
     margin: 0;
 }
 h2 {
-    font-weight: normal;
     font-style: italic;
-    color: #999;
-    font-size: 18px;
+    color: #173f34;
+    font-size: 24px;
     padding: 0;
     margin: 5px 0 10px 0;
 }
@@ -84,7 +96,7 @@ h2 {
 }
 @media (max-width: 991px) {
     #dico {
-        justify-content: center;
+        justify-content: flex-start;
     }
 }
 .iico {
@@ -108,12 +120,9 @@ h2 {
 }
 hr {
     height: 1px;
-    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-color: #c6d1c4;
     padding: 0;
-    margin: 20px 0px 20px 0px;
+    margin: 28px 0px 28px 0px;
     border: 0;
 }
 .ico {
@@ -168,10 +177,22 @@ hr {
     padding: 0;
 }
 .ctitle {
-    font-size: 36px;
-    margin-bottom: 20px;
-    margin-top: 40px;
-    color: #0d9488;
+    font-size: 42px;
+    line-height: 1.1;
+    margin-bottom: 18px;
+    margin-top: 56px;
+    color: #142c25;
+}
+h3 {
+    font-size: 30px;
+    line-height: 1.1;
+    margin: 32px 0 12px 0;
+}
+.band {
+    background-color: #e7ede3;
+    padding-top: 1px;
+    margin-top: 56px;
+    padding-bottom: 28px;
 }
 .ctitle-alt {
     color: #1f6fb2;
@@ -293,7 +314,7 @@ hr {
 }
 .list-family li::marker {
     content: "❤ ";
-    color: #b22222;
+    color: #a94527;
 }
 .list-connect li::marker {
     content: "➤ ";
@@ -308,6 +329,6 @@ hr {
 }
 .write-note {
     display: block;
-    color: #777;
-    font-size: 15px;
+    color: #51605a;
+    font-size: 16px;
 }
